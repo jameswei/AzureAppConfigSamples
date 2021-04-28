@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNetCore", "ASPNetCore\ASPNetCore.csproj", "{3D4C9587-238A-4218-BD69-96E59CFAF9E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunction", "AzureFunction\AzureFunction.csproj", "{2839DABB-2D2F-438D-9A5E-85C18F0EF614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm", "WinForm\WinForm.csproj", "{40D8B9E1-5026-43D1-ACF5-06D736DC8BE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D4C9587-238A-4218-BD69-96E59CFAF9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4C9587-238A-4218-BD69-96E59CFAF9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4C9587-238A-4218-BD69-96E59CFAF9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4C9587-238A-4218-BD69-96E59CFAF9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2839DABB-2D2F-438D-9A5E-85C18F0EF614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2839DABB-2D2F-438D-9A5E-85C18F0EF614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2839DABB-2D2F-438D-9A5E-85C18F0EF614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2839DABB-2D2F-438D-9A5E-85C18F0EF614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D8B9E1-5026-43D1-ACF5-06D736DC8BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D8B9E1-5026-43D1-ACF5-06D736DC8BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D8B9E1-5026-43D1-ACF5-06D736DC8BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D8B9E1-5026-43D1-ACF5-06D736DC8BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C1D118A-E0E7-4277-8F0B-E051476D10B0}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://nimccoll.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ASPNetCore\\ASPNetCore.csproj
+		SccProjectName1 = ASPNetCore
+		SccLocalPath1 = ASPNetCore
+		SccProjectUniqueName2 = AzureFunction\\AzureFunction.csproj
+		SccProjectName2 = AzureFunction
+		SccLocalPath2 = AzureFunction
+		SccProjectUniqueName3 = WinForm\\WinForm.csproj
+		SccProjectName3 = WinForm
+		SccLocalPath3 = WinForm
+	EndGlobalSection
+EndGlobal
