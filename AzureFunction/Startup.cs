@@ -11,6 +11,7 @@
 using System;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.AzureAppConfiguration;
 
 [assembly: FunctionsStartup(typeof(AzureFunction.Startup))]
 
@@ -24,10 +25,15 @@ namespace AzureFunction
             {
                 options.Connect(Environment.GetEnvironmentVariable("ConnectionString"))
                        // Load all keys that start with `AzureFunction:`
+                       // support key filter expression
                        .Select("AzureFunction:*")
-                       // Configure to reload configuration if the registered 'Version' key is modified
                        .ConfigureRefresh(refreshOptions =>
-                          refreshOptions.Register("AzureFunction:Settings:Version", refreshAll: true));
+                          {
+                              // Configure to reload configuration if the registered 'Version' key is modified
+                              refreshOptions.Register("AzureFunction:Settings:Version", LabelFilter.Null, true);
+                              // set interval as 5 minutes
+                              refreshOptions.SetCacheExpiration(TimeSpan.FromMinutes(5));
+                          });
             });
         }
 
